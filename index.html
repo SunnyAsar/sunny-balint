@@ -7,7 +7,58 @@
   </head>
 
   <body>
-    <h1>Hello world, we are developers</h1>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" required placeholder="Name" /> <br />
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" required placeholder="Email" /><br />
+      <label for="number" id="number-label">Number</label>
+      <input
+        type="number"
+        id="number"
+        min="0"
+        max="100"
+        required
+        placeholder="Number"
+      />
+      <br />
+      <label for="dropdown" id="dropdown-label">Choose an option</label>
+      <select id="dropdown">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <p>Your gender</p>
+      <div>
+        <input type="radio" id="gender" name="gender" value="Male" checked />
+        <label for="gender">Male</label>
+      </div>
+      <div>
+        <input type="radio" id="gender" name="gender" value="Female" />
+        <label for="gender">Female</label>
+      </div>
+      <p>Other</p>
+      <div>
+        <input type="checkbox" id="gender" name="gender" value="Male" />
+        <label for="gender">Male</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="gender"
+          name="gender"
+          value="Female"
+          checked
+        />
+        <label for="gender">Female</label>
+      </div>
+      <textarea placeholder="Comments" rows="3"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
